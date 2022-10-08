@@ -7,4 +7,4 @@
   - deleteDuplicates (Eliminacion de claves duplicadas dentro de la lista)
   - reverse (Invertir el orden los nodos dentro de la lista)
   
-![Diagrama de Clases UML](https://github.com/Faithgel/Lab-Evaluado-1/src/img/uml.png?raw=true)
+![Diagrama de Clases UML](https://github.com/Faithgel/Lab-Evaluado-1/blob/master/src/img/uml.png?raw=true)
