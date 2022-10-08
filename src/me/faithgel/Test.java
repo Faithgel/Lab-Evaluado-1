@@ -20,7 +20,7 @@ public class Test {
         System.out.println(TerminalColors.CYAN_BOLD + "--Testeando insercion de elementos--" + TerminalColors.RESET);
         System.out.println(TerminalColors.CYAN_BOLD + "---------------------------------" + TerminalColors.RESET);
         for(int i = 0; i < push.length; i++){
-            if(l.insertNth(i, push[i])){
+            if(l.insertKth(i, push[i])){
                 System.out.println(TerminalColors.GREEN+"Insertado correctamente ૮ ˶ᵔ ᵕ ᵔ˶ ა"+TerminalColors.RESET);
                 System.out.println(TerminalColors.BLUE_BOLD+"Lista: "+TerminalColors.RESET+l);
                 System.out.println(TerminalColors.BLUE_BOLD+"Tamaño: "+TerminalColors.RESET+l.getSize());
@@ -44,7 +44,7 @@ public class Test {
         int size = l.getSize();
         for(int i = 0; i < size; i++){
             int pos = (int) (Math.random() * l.getSize());
-            if(l.deleteNth(pos)){
+            if(l.deleteKth(pos)){
                 System.out.println(TerminalColors.GREEN+"Eliminado correctamente ⸜(｡˃ ᵕ ˂ )⸝");
                 System.out.println(TerminalColors.BLUE_BOLD+"Lista actual: "+TerminalColors.RESET+l);
                 System.out.println(TerminalColors.BLUE_BOLD+"Tamaño actual: "+TerminalColors.RESET+l.getSize());
@@ -59,7 +59,7 @@ public class Test {
         System.out.println(TerminalColors.CYAN_BOLD+"--Testeando swap de elementos--"+TerminalColors.RESET);
         System.out.println(TerminalColors.CYAN_BOLD + "---------------------------------" + TerminalColors.RESET);
         for(int i = 0; i < push.length; i++){
-            l.insertNth(i, push[i]);
+            l.insertKth(i, push[i]);
         }
         for (int i = 0; i < push.length; i++) {
             int pos1 = (int) (Math.random() * l.getSize());

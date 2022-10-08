@@ -12,7 +12,7 @@ public class Lista {
     }
 
     //metodos
-    public boolean insertNth(int n, int value){
+    public boolean insertKth(int n, int value){
         if(n < 0) return false;
 
         Nodo nuevo = new Nodo();
@@ -35,7 +35,7 @@ public class Lista {
         return true;
     }
 
-    public boolean deleteNth(int n){
+    public boolean deleteKth(int n){
         if(n < 0) return false;
         if(n == 0){
             this.head = this.head.siguiente;
